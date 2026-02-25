@@ -6,16 +6,33 @@ font-family:Poppins;
 
 background:black;
 
-color:gold;
+color:white;
 
 }
 
 
-section{
+nav{
 
-padding:60px;
+background:black;
 
-text-align:center;
+padding:20px;
+
+position:fixed;
+
+width:100%;
+
+top:0;
+
+}
+
+
+nav a{
+
+color:gold;
+
+margin:15px;
+
+text-decoration:none;
 
 }
 
@@ -24,9 +41,9 @@ text-align:center;
 
 height:100vh;
 
-background:linear-gradient(black,#111);
-
 display:flex;
+
+flex-direction:column;
 
 justify-content:center;
 
@@ -35,27 +52,40 @@ align-items:center;
 }
 
 
-.profile{
+.hero img{
 
-width:150px;
+width:180px;
+
+height:180px;
 
 border-radius:50%;
 
 border:3px solid gold;
+
+object-fit:cover;
 
 }
 
 
 h1{
 
-font-size:50px;
+font-size:45px;
 
 }
 
 
 h2{
 
-color:white;
+color:gold;
+
+}
+
+
+section{
+
+padding:80px;
+
+text-align:center;
 
 }
 
@@ -64,28 +94,15 @@ color:white;
 
 background:#111;
 
-margin:20px auto;
-
 padding:20px;
+
+margin:20px auto;
 
 width:300px;
 
 border:1px solid gold;
 
 border-radius:10px;
-
-transition:0.3s;
-
-}
-
-
-.card:hover{
-
-background:gold;
-
-color:black;
-
-transform:scale(1.05);
 
 }
 
@@ -100,40 +117,19 @@ padding:10px 20px;
 
 text-decoration:none;
 
-border-radius:5px;
+margin-top:20px;
+
+display:inline-block;
 
 }
 
 
-.skill{
+footer{
 
-width:300px;
+text-align:center;
 
-margin:auto;
+padding:20px;
 
-}
-
-
-.bar{
-
-background:#333;
-
-height:10px;
-
-}
-
-
-.bar div{
-
-background:gold;
-
-height:10px;
-
-}
-
-
-a{
-
-color:gold;
+background:#111;
 
 }
