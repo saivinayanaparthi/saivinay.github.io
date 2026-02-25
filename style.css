@@ -1,114 +1,139 @@
-body {
+body{
 
-background-color: black;
+margin:0;
 
-color: gold;
+font-family:Poppins;
 
-font-family: Arial;
+background:black;
 
-margin: 0;
-
-}
-
-
-/* HERO */
-
-.hero {
-
-text-align: center;
-
-padding: 100px;
-
-background: linear-gradient(black, #111);
+color:gold;
 
 }
 
 
-.hero h1 {
+section{
 
-font-size: 50px;
+padding:60px;
 
-}
-
-
-.hero h2 {
-
-color: white;
+text-align:center;
 
 }
 
 
-.logo {
+.hero{
 
-width: 120px;
+height:100vh;
 
-margin-top: 20px;
+background:linear-gradient(black,#111);
 
-}
+display:flex;
 
+justify-content:center;
 
-
-/* SECTIONS */
-
-.section {
-
-padding: 50px;
-
-text-align: center;
+align-items:center;
 
 }
 
 
+.profile{
 
-/* CARDS */
+width:150px;
 
-.cards {
+border-radius:50%;
 
-display: flex;
-
-justify-content: center;
-
-flex-wrap: wrap;
+border:3px solid gold;
 
 }
 
 
-.card {
+h1{
 
-background: #111;
-
-border: 1px solid gold;
-
-padding: 20px;
-
-margin: 15px;
-
-width: 250px;
-
-border-radius: 10px;
-
-transition: 0.3s;
+font-size:50px;
 
 }
 
 
-.card:hover {
+h2{
 
-background: gold;
-
-color: black;
-
-transform: scale(1.05);
+color:white;
 
 }
 
 
-/* LINKS */
+.card{
 
-a {
+background:#111;
 
-color: gold;
+margin:20px auto;
 
-text-decoration: none;
+padding:20px;
+
+width:300px;
+
+border:1px solid gold;
+
+border-radius:10px;
+
+transition:0.3s;
+
+}
+
+
+.card:hover{
+
+background:gold;
+
+color:black;
+
+transform:scale(1.05);
+
+}
+
+
+.btn{
+
+background:gold;
+
+color:black;
+
+padding:10px 20px;
+
+text-decoration:none;
+
+border-radius:5px;
+
+}
+
+
+.skill{
+
+width:300px;
+
+margin:auto;
+
+}
+
+
+.bar{
+
+background:#333;
+
+height:10px;
+
+}
+
+
+.bar div{
+
+background:gold;
+
+height:10px;
+
+}
+
+
+a{
+
+color:gold;
 
 }
