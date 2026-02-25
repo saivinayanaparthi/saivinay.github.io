@@ -1,42 +1,114 @@
 body {
 
+background-color: black;
+
+color: gold;
+
 font-family: Arial;
 
 margin: 0;
 
-background-color: #f4f6f9;
-
 }
 
 
-header {
+/* HERO */
 
-background-color: #0176D3;
-
-color: white;
+.hero {
 
 text-align: center;
 
-padding: 40px;
+padding: 100px;
+
+background: linear-gradient(black, #111);
 
 }
 
 
-section {
+.hero h1 {
 
-background-color: white;
+font-size: 50px;
 
-margin: 20px;
+}
+
+
+.hero h2 {
+
+color: white;
+
+}
+
+
+.logo {
+
+width: 120px;
+
+margin-top: 20px;
+
+}
+
+
+
+/* SECTIONS */
+
+.section {
+
+padding: 50px;
+
+text-align: center;
+
+}
+
+
+
+/* CARDS */
+
+.cards {
+
+display: flex;
+
+justify-content: center;
+
+flex-wrap: wrap;
+
+}
+
+
+.card {
+
+background: #111;
+
+border: 1px solid gold;
 
 padding: 20px;
 
+margin: 15px;
+
+width: 250px;
+
 border-radius: 10px;
+
+transition: 0.3s;
 
 }
 
 
-h2 {
+.card:hover {
 
-color: #0176D3;
+background: gold;
+
+color: black;
+
+transform: scale(1.05);
+
+}
+
+
+/* LINKS */
+
+a {
+
+color: gold;
+
+text-decoration: none;
 
 }
