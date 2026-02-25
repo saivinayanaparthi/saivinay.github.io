@@ -1,0 +1,42 @@
+body {
+
+font-family: Arial;
+
+margin: 0;
+
+background-color: #f4f6f9;
+
+}
+
+
+header {
+
+background-color: #0176D3;
+
+color: white;
+
+text-align: center;
+
+padding: 40px;
+
+}
+
+
+section {
+
+background-color: white;
+
+margin: 20px;
+
+padding: 20px;
+
+border-radius: 10px;
+
+}
+
+
+h2 {
+
+color: #0176D3;
+
+}
