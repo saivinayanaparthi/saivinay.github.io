@@ -13,15 +13,19 @@ color:white;
 
 nav{
 
-background:black;
+display:flex;
+
+justify-content:space-between;
 
 padding:20px;
+
+background:black;
 
 position:fixed;
 
 width:100%;
 
-top:0;
+z-index:1000;
 
 }
 
@@ -30,9 +34,20 @@ nav a{
 
 color:gold;
 
-margin:15px;
+margin:10px;
 
 text-decoration:none;
+
+}
+
+
+section{
+
+padding:100px 20px;
+
+max-width:1000px;
+
+margin:auto;
 
 }
 
@@ -48,6 +63,8 @@ flex-direction:column;
 justify-content:center;
 
 align-items:center;
+
+text-align:center;
 
 }
 
@@ -67,25 +84,24 @@ object-fit:cover;
 }
 
 
-h1{
-
-font-size:45px;
-
-}
-
-
 h2{
 
 color:gold;
 
+margin-bottom:30px;
+
 }
 
 
-section{
+.grid{
 
-padding:80px;
+display:flex;
 
-text-align:center;
+gap:30px;
+
+flex-wrap:wrap;
+
+justify-content:center;
 
 }
 
@@ -96,13 +112,61 @@ background:#111;
 
 padding:20px;
 
-margin:20px auto;
+border:1px solid gold;
 
 width:300px;
 
-border:1px solid gold;
+transition:.3s;
 
-border-radius:10px;
+}
+
+
+.card:hover{
+
+transform:scale(1.05);
+
+}
+
+
+.card img{
+
+width:100%;
+
+}
+
+
+.timeline-item{
+
+border-left:2px solid gold;
+
+padding-left:20px;
+
+margin-bottom:30px;
+
+}
+
+
+.skill{
+
+margin:20px 0;
+
+}
+
+
+.bar{
+
+height:10px;
+
+background:#333;
+
+}
+
+
+.bar div{
+
+height:10px;
+
+background:gold;
 
 }
 
@@ -113,7 +177,7 @@ background:gold;
 
 color:black;
 
-padding:10px 20px;
+padding:12px 25px;
 
 text-decoration:none;
 
@@ -124,12 +188,47 @@ display:inline-block;
 }
 
 
-footer{
+.clouds{
 
-text-align:center;
+position:fixed;
 
-padding:20px;
+width:100%;
 
-background:#111;
+height:100%;
+
+background:url("https://i.ibb.co/7bQQYkX/clouds.png");
+
+opacity:.05;
+
+animation:cloudMove 60s linear infinite;
+
+}
+
+
+@keyframes cloudMove{
+
+0%{background-position:0}
+
+100%{background-position:10000px}
+
+}
+
+
+.fade{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:1s;
+
+}
+
+
+.fade.show{
+
+opacity:1;
+
+transform:translateY(0);
 
 }
