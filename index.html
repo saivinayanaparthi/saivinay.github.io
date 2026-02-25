@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -9,7 +10,7 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,11 +18,14 @@
 <body>
 
 
-<!-- NAVBAR -->
+<div class="clouds"></div>
+
 
 <nav>
 
 <h2>Sai Vinay</h2>
+
+<div>
 
 <a href="#about">About</a>
 
@@ -29,15 +33,19 @@
 
 <a href="#projects">Projects</a>
 
+<a href="#skills">Skills</a>
+
+<a href="#certifications">Certifications</a>
+
 <a href="#contact">Contact</a>
+
+</div>
 
 </nav>
 
 
 
-<!-- HERO -->
-
-<section class="hero">
+<section class="hero fade">
 
 <img src="profile.jpg">
 
@@ -45,7 +53,11 @@
 
 <h3>Salesforce Platform Developer II</h3>
 
-<p>Deloitte | 6.3 Years | Apex • LWC • CPQ • Integrations</p>
+<p>
+
+6.3 Years Experience | Deloitte | CPQ | Health Cloud | Integrations
+
+</p>
 
 <a href="SaiVinay_Anaparthi_Salesforce_Developer_Resume.pdf" class="btn">
 
@@ -57,15 +69,17 @@ Download Resume
 
 
 
-<!-- ABOUT -->
+<section id="about" class="fade">
 
-<section id="about">
-
-<h2>About</h2>
+<h2>About Me</h2>
 
 <p>
 
-Salesforce Developer with 6.3 years experience delivering enterprise solutions for Fortune-level clients including CPQ, Health Cloud and integrations.
+Salesforce Developer with 6.3 years delivering enterprise-scale Salesforce solutions across Deloitte and Wilco Source.
+
+Specialized in Apex, Lightning Web Components, CPQ implementation, integrations, and Health Cloud.
+
+Mentored teams, handled deployments, and built scalable enterprise applications.
 
 </p>
 
@@ -73,35 +87,45 @@ Salesforce Developer with 6.3 years experience delivering enterprise solutions f
 
 
 
-<!-- EXPERIENCE -->
-
-<section id="experience">
+<section id="experience" class="fade">
 
 <h2>Experience</h2>
 
 
-<div class="card">
+<div class="timeline">
 
-<h3>Deloitte</h3>
+
+<div class="timeline-item">
+
+<h3>Deloitte Consulting</h3>
+
+<span>2020 – 2023</span>
 
 <p>
 
-Senior Salesforce Developer
+Senior Salesforce Developer implementing CPQ, integrations, and enterprise solutions.
+
+Built pricing automation, integrations, and LWC portals.
 
 </p>
 
 </div>
 
 
-<div class="card">
+<div class="timeline-item">
 
 <h3>Wilco Source</h3>
 
+<span>2023 – Present</span>
+
 <p>
 
-Salesforce Engineer
+Salesforce Engineer working on Health Cloud integrations, Apex development, and enterprise Lightning applications.
 
 </p>
+
+</div>
+
 
 </div>
 
@@ -110,30 +134,58 @@ Salesforce Engineer
 
 
 
-<!-- PROJECTS -->
-
-<section id="projects">
+<section id="projects" class="fade">
 
 <h2>Key Projects</h2>
 
 
+<div class="grid">
+
+
 <div class="card">
 
-Salesforce CPQ Implementation
+<img src="images/cpq.png">
+
+<h3>Salesforce CPQ Implementation</h3>
+
+<p>
+
+Built automated quoting system with pricing and approval automation.
+
+</p>
 
 </div>
 
 
 <div class="card">
 
-Health Cloud Integration
+<img src="images/healthcloud.png">
+
+<h3>Health Cloud Integration</h3>
+
+<p>
+
+Integrated Salesforce with healthcare systems using REST APIs.
+
+</p>
 
 </div>
 
 
 <div class="card">
 
-Community Cloud Portal
+<img src="images/community.png">
+
+<h3>Community Portal</h3>
+
+<p>
+
+Developed Lightning Web Component community portals.
+
+</p>
+
+</div>
+
 
 </div>
 
@@ -142,45 +194,97 @@ Community Cloud Portal
 
 
 
-<!-- CONTACT -->
+<section id="skills" class="fade">
 
-<section id="contact">
+<h2>Skills</h2>
+
+
+<div class="skill">
+
+<span>Apex</span>
+
+<div class="bar"><div style="width:95%"></div></div>
+
+</div>
+
+
+<div class="skill">
+
+<span>LWC</span>
+
+<div class="bar"><div style="width:92%"></div></div>
+
+</div>
+
+
+<div class="skill">
+
+<span>Integrations</span>
+
+<div class="bar"><div style="width:90%"></div></div>
+
+</div>
+
+
+<div class="skill">
+
+<span>CPQ</span>
+
+<div class="bar"><div style="width:88%"></div></div>
+
+</div>
+
+
+</section>
+
+
+
+<section id="certifications" class="fade">
+
+<h2>Certifications</h2>
+
+
+<div class="grid">
+
+
+<img src="badges/pd2.png">
+
+<img src="badges/pd1.png">
+
+<img src="badges/ai.png">
+
+<img src="badges/admin.png">
+
+
+</div>
+
+</section>
+
+
+
+<section id="contact" class="fade">
 
 <h2>Contact</h2>
 
-<p>
-
-Email: saivinay.anaparth8@gmail.com
-
-</p>
+<p>Email: saivinay.anaparth8@gmail.com</p>
 
 <p>
-
-LinkedIn:
 
 <a href="https://www.linkedin.com/in/sai-vinay-anaparthi">
 
-View Profile
+LinkedIn Profile
 
 </a>
 
 </p>
 
-
 </section>
 
 
 
-<footer>
-
-<p>
-
-© 2026 Sai Vinay Anaparthi
-
-</p>
-
-</footer>
+<script src="script.js"></script>
 
 
 </body>
+
 </html>
