@@ -7,11 +7,260 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sai Vinay | Salesforce Developer</title>
+<title>Sai Vinay | Salesforce Architect</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+
+
+body{
+
+margin:0;
+
+font-family:Montserrat;
+
+background:black;
+
+color:white;
+
+scroll-behavior:smooth;
+
+}
+
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+background:black;
+
+padding:20px;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+
+nav a{
+
+color:gold;
+
+margin:10px;
+
+text-decoration:none;
+
+}
+
+
+.hero{
+
+text-align:center;
+
+padding:100px 20px;
+
+animation:fadeIn 2s;
+
+}
+
+
+.hero img{
+
+width:180px;
+
+border-radius:50%;
+
+border:3px solid gold;
+
+}
+
+
+button{
+
+padding:15px;
+
+background:gold;
+
+border:none;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+
+button:hover{
+
+transform:scale(1.1);
+
+}
+
+
+section{
+
+padding:60px 20px;
+
+}
+
+
+h2{
+
+color:gold;
+
+}
+
+
+.card{
+
+border:1px solid gold;
+
+padding:20px;
+
+margin:20px;
+
+width:300px;
+
+transition:0.4s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 20px gold;
+
+}
+
+
+.flex{
+
+display:flex;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+.timeline{
+
+border-left:3px solid gold;
+
+padding-left:20px;
+
+}
+
+
+.timeline div{
+
+margin-bottom:30px;
+
+animation:slideUp 1s;
+
+}
+
+
+.skillbar{
+
+background:#333;
+
+margin:10px;
+
+}
+
+
+.skill{
+
+background:gold;
+
+padding:5px;
+
+animation:load 2s;
+
+}
+
+
+.cert img{
+
+width:100px;
+
+margin:10px;
+
+transition:0.3s;
+
+}
+
+
+.cert img:hover{
+
+transform:scale(1.2);
+
+}
+
+
+footer{
+
+text-align:center;
+
+padding:20px;
+
+}
+
+
+@keyframes fadeIn{
+
+from{opacity:0}
+
+to{opacity:1}
+
+}
+
+
+@keyframes slideUp{
+
+from{
+
+transform:translateY(50px);
+
+opacity:0
+
+}
+
+to{
+
+transform:translateY(0);
+
+opacity:1
+
+}
+
+}
+
+
+@keyframes load{
+
+from{
+
+width:0
+
+}
+
+}
+
+
+</style>
 
 </head>
 
@@ -19,36 +268,41 @@
 <body>
 
 
-<header>
-
 <nav>
 
-<h2 class="logo">Sai Vinay</h2>
+<h3>Sai Vinay</h3>
 
-<ul>
+<div>
 
-<li><a href="#about">About</a></li>
+<a href="#about">About</a>
 
-<li><a href="#projects">Projects</a></li>
+<a href="#experience">Experience</a>
 
-<li><a href="#skills">Skills</a></li>
+<a href="#projects">Projects</a>
 
-<li><a href="#certifications">Certifications</a></li>
+<a href="#skills">Skills</a>
 
-<li><a href="#contact">Contact</a></li>
+<a href="#certs">Certifications</a>
 
-</ul>
+<a href="#contact">Contact</a>
+
+</div>
 
 </nav>
 
 
+
 <div class="hero">
 
-<img src="profile.jpg" class="profile">
+<img src="profile.jpg">
 
 <h1>Sai Vinay Anaparthi</h1>
 
-<p>Salesforce PD2 Certified Developer | CPQ | Health Cloud | 6.3 Years</p>
+<p>
+
+Salesforce Architect | PD2 | CPQ | Health Cloud | 6.3 Years
+
+</p>
 
 <a href="resume.pdf">
 
@@ -58,25 +312,102 @@
 
 </div>
 
-</header>
+
+
+<section id="about">
+
+<h2>About</h2>
+
+<p>
+
+Salesforce Developer with 6.3 years experience in Apex, LWC, CPQ, Health Cloud, Integrations, and Community Cloud.
+
+Worked at Deloitte and Wilco Source delivering enterprise CRM solutions.
+
+</p>
+
+</section>
+
+
+
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="timeline">
+
+
+<div>
+
+<h3>Wilco Source (2023–Present)</h3>
+
+<p>
+
+Salesforce Software Engineer
+
+</p>
+
+<p>
+
+Worked on Health Cloud, integrations, Apex, LWC, Community.
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>Deloitte (2020–2023)</h3>
+
+<p>
+
+Senior Salesforce Developer
+
+</p>
+
+<p>
+
+Implemented CPQ, integrations, Apex, enterprise systems.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
 
 
 
 <section id="projects">
 
-<h2>Key Projects</h2>
+<h2>Projects</h2>
 
-
-<div class="project-container">
+<div class="flex">
 
 
 <div class="card">
 
-<img src="images/cpq.jpg">
+<img src="images/cpq.jpg" width="100%">
 
-<h3>Salesforce CPQ Implementation</h3>
+<h3>Sobeys CPQ</h3>
 
-<p>Built automated quoting system with pricing and approvals.</p>
+<p>
+
+Full CPQ implementation
+
+Pricing rules
+
+Approval process
+
+Quote automation
+
+</p>
 
 </div>
 
@@ -84,11 +415,19 @@
 
 <div class="card">
 
-<img src="images/healthcloud.jpg">
+<img src="images/healthcloud.jpg" width="100%">
 
-<h3>Health Cloud Integration</h3>
+<h3>Trail Card Health Cloud</h3>
 
-<p>Integrated Salesforce with healthcare systems using REST APIs.</p>
+<p>
+
+Health Cloud setup
+
+REST integration
+
+Community portal
+
+</p>
 
 </div>
 
@@ -96,14 +435,21 @@
 
 <div class="card">
 
-<img src="images/community.jpg">
+<img src="images/community.jpg" width="100%">
 
-<h3>Community Portal</h3>
+<h3>Carrier Community Portal</h3>
 
-<p>Developed Lightning Web Component community portals.</p>
+<p>
+
+Experience Cloud
+
+LWC
+
+External users
+
+</p>
 
 </div>
-
 
 
 </div>
@@ -117,38 +463,42 @@
 
 <h2>Skills</h2>
 
-<div class="skill">
 
 <p>Apex</p>
 
-<div class="bar"><div class="fill" style="width:95%"></div></div>
+<div class="skillbar">
+
+<div class="skill" style="width:95%"> </div>
 
 </div>
 
 
-<div class="skill">
 
 <p>LWC</p>
 
-<div class="bar"><div class="fill" style="width:90%"></div></div>
+<div class="skillbar">
+
+<div class="skill" style="width:90%"> </div>
 
 </div>
 
 
-<div class="skill">
-
-<p>Integration</p>
-
-<div class="bar"><div class="fill" style="width:92%"></div></div>
-
-</div>
-
-
-<div class="skill">
 
 <p>CPQ</p>
 
-<div class="bar"><div class="fill" style="width:90%"></div></div>
+<div class="skillbar">
+
+<div class="skill" style="width:92%"> </div>
+
+</div>
+
+
+
+<p>Integration</p>
+
+<div class="skillbar">
+
+<div class="skill" style="width:94%"> </div>
 
 </div>
 
@@ -158,12 +508,12 @@
 
 
 
-<section id="certifications">
+<section id="certs">
 
 <h2>Certifications</h2>
 
 
-<div class="cert-container">
+<div class="cert">
 
 <img src="certs/pd2.png">
 
@@ -189,15 +539,11 @@
 
 <p>Phone: 8897491611</p>
 
-<p>
-
 <a href="https://www.linkedin.com/in/sai-vinay-anaparthi">
 
 LinkedIn
 
 </a>
-
-</p>
 
 
 </section>
@@ -206,10 +552,9 @@ LinkedIn
 
 <footer>
 
-<p>© 2026 Sai Vinay</p>
+© 2026 Sai Vinay
 
 </footer>
-
 
 
 </body>
