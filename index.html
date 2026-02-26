@@ -7,27 +7,56 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sai Vinay | Salesforce Architect</title>
+<title>Sai Vinay | Salesforce Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
+/* Animated Gradient Background */
 
 body{
 
 margin:0;
 
-font-family:Montserrat;
-
-background:black;
+font-family:Poppins;
 
 color:white;
 
-scroll-behavior:smooth;
+background:linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c92d2);
+
+background-size:400% 400%;
+
+animation:gradient 15s ease infinite;
 
 }
 
+
+@keyframes gradient{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+
+
+/* Navbar */
 
 nav{
 
@@ -35,22 +64,22 @@ display:flex;
 
 justify-content:space-between;
 
-background:black;
-
 padding:20px;
+
+background:rgba(0,0,0,0.3);
+
+backdrop-filter:blur(10px);
 
 position:sticky;
 
 top:0;
-
-z-index:1000;
 
 }
 
 
 nav a{
 
-color:gold;
+color:white;
 
 margin:10px;
 
@@ -59,35 +88,49 @@ text-decoration:none;
 }
 
 
+
+/* Hero Section */
+
 .hero{
 
 text-align:center;
 
-padding:100px 20px;
+padding:80px 20px;
 
 animation:fadeIn 2s;
 
 }
 
 
-.hero img{
+/* PERFECT ROUND PROFILE */
+
+.profile{
 
 width:180px;
 
+height:180px;
+
 border-radius:50%;
 
-border:3px solid gold;
+object-fit:cover;
+
+border:4px solid white;
+
+animation:float 4s ease-in-out infinite;
 
 }
 
 
+
+/* Button */
+
 button{
 
-padding:15px;
-
-background:gold;
+padding:12px 25px;
 
 border:none;
+
+background:#ffcc00;
 
 font-weight:bold;
 
@@ -105,29 +148,37 @@ transform:scale(1.1);
 }
 
 
+
+/* Sections */
+
 section{
 
-padding:60px 20px;
+padding:60px;
 
 }
 
 
 h2{
 
-color:gold;
+color:#ffcc00;
 
 }
 
 
+
+/* Cards */
+
 .card{
 
-border:1px solid gold;
+background:rgba(0,0,0,0.4);
+
+backdrop-filter:blur(10px);
 
 padding:20px;
 
 margin:20px;
 
-width:300px;
+border-radius:10px;
 
 transition:0.4s;
 
@@ -138,7 +189,7 @@ transition:0.4s;
 
 transform:translateY(-10px);
 
-box-shadow:0 0 20px gold;
+box-shadow:0 0 20px #ffcc00;
 
 }
 
@@ -154,43 +205,29 @@ justify-content:center;
 }
 
 
-.timeline{
 
-border-left:3px solid gold;
+/* Skills */
 
-padding-left:20px;
-
-}
-
-
-.timeline div{
-
-margin-bottom:30px;
-
-animation:slideUp 1s;
-
-}
-
-
-.skillbar{
+.bar{
 
 background:#333;
 
-margin:10px;
-
 }
 
 
-.skill{
+.fill{
 
-background:gold;
+background:#ffcc00;
 
-padding:5px;
+height:10px;
 
 animation:load 2s;
 
 }
 
+
+
+/* Certifications */
 
 .cert img{
 
@@ -210,39 +247,37 @@ transform:scale(1.2);
 }
 
 
-footer{
 
-text-align:center;
-
-padding:20px;
-
-}
-
+/* Animations */
 
 @keyframes fadeIn{
 
-from{opacity:0}
-
-to{opacity:1}
-
-}
-
-
-@keyframes slideUp{
-
 from{
 
-transform:translateY(50px);
-
-opacity:0
+opacity:0;
 
 }
 
 to{
 
+opacity:1;
+
+}
+
+}
+
+
+@keyframes float{
+
+0%,100%{
+
 transform:translateY(0);
 
-opacity:1
+}
+
+50%{
+
+transform:translateY(-15px);
 
 }
 
@@ -253,7 +288,29 @@ opacity:1
 
 from{
 
-width:0
+width:0;
+
+}
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.flex{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+section{
+
+padding:30px;
 
 }
 
@@ -266,6 +323,7 @@ width:0
 
 
 <body>
+
 
 
 <nav>
@@ -294,7 +352,7 @@ width:0
 
 <div class="hero">
 
-<img src="profile.jpg">
+<img src="profile.jpg" class="profile">
 
 <h1>Sai Vinay Anaparthi</h1>
 
@@ -314,43 +372,18 @@ Salesforce Architect | PD2 | CPQ | Health Cloud | 6.3 Years
 
 
 
-<section id="about">
-
-<h2>About</h2>
-
-<p>
-
-Salesforce Developer with 6.3 years experience in Apex, LWC, CPQ, Health Cloud, Integrations, and Community Cloud.
-
-Worked at Deloitte and Wilco Source delivering enterprise CRM solutions.
-
-</p>
-
-</section>
-
-
-
-
 <section id="experience">
 
 <h2>Experience</h2>
 
-<div class="timeline">
 
+<div class="card">
 
-<div>
-
-<h3>Wilco Source (2023–Present)</h3>
+<h3>Wilco Source – Salesforce Engineer (2023-Present)</h3>
 
 <p>
 
-Salesforce Software Engineer
-
-</p>
-
-<p>
-
-Worked on Health Cloud, integrations, Apex, LWC, Community.
+Health Cloud, LWC, Apex, Integrations, Deployment
 
 </p>
 
@@ -358,35 +391,27 @@ Worked on Health Cloud, integrations, Apex, LWC, Community.
 
 
 
-<div>
+<div class="card">
 
-<h3>Deloitte (2020–2023)</h3>
-
-<p>
-
-Senior Salesforce Developer
-
-</p>
+<h3>Deloitte – Senior Salesforce Developer (2020-2023)</h3>
 
 <p>
 
-Implemented CPQ, integrations, Apex, enterprise systems.
+CPQ implementation, Apex, integrations, enterprise CRM
 
 </p>
 
 </div>
 
-
-</div>
 
 </section>
-
 
 
 
 <section id="projects">
 
 <h2>Projects</h2>
+
 
 <div class="flex">
 
@@ -397,18 +422,6 @@ Implemented CPQ, integrations, Apex, enterprise systems.
 
 <h3>Sobeys CPQ</h3>
 
-<p>
-
-Full CPQ implementation
-
-Pricing rules
-
-Approval process
-
-Quote automation
-
-</p>
-
 </div>
 
 
@@ -417,17 +430,7 @@ Quote automation
 
 <img src="images/healthcloud.jpg" width="100%">
 
-<h3>Trail Card Health Cloud</h3>
-
-<p>
-
-Health Cloud setup
-
-REST integration
-
-Community portal
-
-</p>
+<h3>Health Cloud Integration</h3>
 
 </div>
 
@@ -437,17 +440,7 @@ Community portal
 
 <img src="images/community.jpg" width="100%">
 
-<h3>Carrier Community Portal</h3>
-
-<p>
-
-Experience Cloud
-
-LWC
-
-External users
-
-</p>
+<h3>Community Portal</h3>
 
 </div>
 
@@ -455,7 +448,6 @@ External users
 </div>
 
 </section>
-
 
 
 
@@ -466,45 +458,23 @@ External users
 
 <p>Apex</p>
 
-<div class="skillbar">
+<div class="bar">
 
-<div class="skill" style="width:95%"> </div>
+<div class="fill" style="width:95%"></div>
 
 </div>
-
 
 
 <p>LWC</p>
 
-<div class="skillbar">
+<div class="bar">
 
-<div class="skill" style="width:90%"> </div>
-
-</div>
-
-
-
-<p>CPQ</p>
-
-<div class="skillbar">
-
-<div class="skill" style="width:92%"> </div>
-
-</div>
-
-
-
-<p>Integration</p>
-
-<div class="skillbar">
-
-<div class="skill" style="width:94%"> </div>
+<div class="fill" style="width:90%"></div>
 
 </div>
 
 
 </section>
-
 
 
 
@@ -530,7 +500,6 @@ External users
 
 
 
-
 <section id="contact">
 
 <h2>Contact</h2>
@@ -539,22 +508,8 @@ External users
 
 <p>Phone: 8897491611</p>
 
-<a href="https://www.linkedin.com/in/sai-vinay-anaparthi">
-
-LinkedIn
-
-</a>
-
-
 </section>
 
-
-
-<footer>
-
-© 2026 Sai Vinay
-
-</footer>
 
 
 </body>
