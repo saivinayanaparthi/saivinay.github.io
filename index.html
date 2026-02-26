@@ -1,244 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sai Vinay | Salesforce Architect</title>
+<title>Sai Vinay | Salesforce Developer</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div id="particles-js"></div>
-
-
-<nav>
-
-<h2>Sai Vinay</h2>
-
-<div>
-
-<a href="#skills">Skills</a>
-
-<a href="#projects">Projects</a>
-
-<a href="#certifications">Certifications</a>
-
-<a href="#contact">Contact</a>
-
-</div>
-
-</nav>
-
-
+<canvas id="bgCanvas"></canvas>
 
 <header>
 
-<img src="profile.jpg" class="profile">
+<img src="images/profile.jpg" class="profile">
 
 <h1>Sai Vinay Anaparthi</h1>
 
-<h3>Salesforce Architect | PD2 | CPQ | Health Cloud | SFCC</h3>
-
-<a href="resume.pdf">
-
-<button>Download Resume</button>
-
-</a>
+<p>Senior Salesforce Developer | 6.3 Years Experience</p>
 
 </header>
 
 
+<section>
 
-<section id="skills">
-
-<h2>Technical Skills</h2>
-
+<h2>Skills</h2>
 
 <div class="skill">
 
 <span>Apex</span>
 
-<div class="bar"><div style="width:95%"></div></div>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
 
 </div>
-
 
 
 <div class="skill">
 
-<span>Lightning Web Components</span>
+<span>LWC</span>
 
-<div class="bar"><div style="width:95%"></div></div>
+<div class="bar"><div class="fill" style="width:92%"></div></div>
 
 </div>
-
 
 
 <div class="skill">
 
-<span>Salesforce CPQ</span>
+<span>Triggers</span>
 
-<div class="bar"><div style="width:90%"></div></div>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
 
 </div>
-
 
 
 <div class="skill">
 
-<span>Health Cloud</span>
+<span>Integration</span>
 
-<div class="bar"><div style="width:90%"></div></div>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
 
 </div>
-
 
 
 <div class="skill">
 
-<span>SFCC</span>
+<span>Flows</span>
 
-<div class="bar"><div style="width:92%"></div></div>
-
-</div>
-
-
-
-<div class="skill">
-
-<span>REST API / Integrations</span>
-
-<div class="bar"><div style="width:93%"></div></div>
+<div class="bar"><div class="fill" style="width:94%"></div></div>
 
 </div>
-
-
-
-<div class="skill">
-
-<span>SOQL / SOSL</span>
-
-<div class="bar"><div style="width:94%"></div></div>
-
-</div>
-
-
-
-<div class="skill">
-
-<span>Experience Cloud</span>
-
-<div class="bar"><div style="width:90%"></div></div>
-
-</div>
-
-
 
 </section>
 
 
 
-<section id="projects">
+<section>
 
 <h2>Projects</h2>
 
+<div class="project" onclick="openProject('healthcare')">
 
-<div class="project" onclick="openProject(1)">
-
-Trail Card Inc – Health Cloud Integration
-
-</div>
-
-
-
-<div class="project" onclick="openProject(2)">
-
-Sobeys Inc – Salesforce CPQ Implementation
+Healthcare Project
 
 </div>
 
 
+<div class="project" onclick="openProject('insurance')">
 
-<div class="project" onclick="openProject(3)">
-
-Waste Management – Integration Project
-
-</div>
-
-
-
-<div class="project" onclick="openProject(4)">
-
-Carrier Inc – Community Cloud & SFCC
+Insurance Project
 
 </div>
 
 
+<div class="project" onclick="openProject('banking')">
 
-</section>
-
-
-
-
-<section id="certifications">
-
-<h2>Certifications</h2>
-
-
-<div class="certs">
-
-<img src="certs/pd2.png">
-
-<img src="certs/pd1.png">
-
-<img src="certs/admin.png">
-
-<img src="certs/ai.png">
+Banking Project
 
 </div>
 
 
 </section>
-
-
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: saivinay.anaparth8@gmail.com</p>
-
-<p>Phone: 8897491611</p>
-
-</section>
-
 
 
 <div id="modal" class="modal">
 
 <div class="modal-content">
 
-<span class="close" onclick="closeModal()">&times;</span>
+<span class="close" onclick="closeProject()">&times;</span>
 
-<h2 id="modal-title"></h2>
+<h3 id="projectTitle"></h3>
 
-<p id="modal-desc"></p>
-
-</div>
+<p id="projectDesc"></p>
 
 </div>
 
+</div>
 
 
 <script src="script.js"></script>
