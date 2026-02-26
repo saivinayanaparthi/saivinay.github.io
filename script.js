@@ -1,72 +1,122 @@
-particlesJS("particles-js", {
-
-particles:{
-
-number:{value:80},
-
-size:{value:3},
-
-move:{speed:2}
-
-}
-
-});
-
-
-function openProject(id){
-
-let title="";
-
-let desc="";
-
-
-if(id==1){
-
-title="Trail Card Inc";
-
-desc="Worked on Health Cloud, integrations, Apex, LWC, deployment, API integrations.";
-
-}
-
-
-if(id==2){
-
-title="Sobeys Inc";
-
-desc="Implemented Salesforce CPQ, pricing rules, quote templates, integrations.";
-
-}
-
-
-if(id==3){
-
-title="Waste Management";
-
-desc="Developed integrations, Apex, Visualforce, data model.";
-
-}
-
-
-if(id==4){
-
-title="Carrier Inc";
-
-desc="Built community cloud portal, integrations, SFCC backend.";
-
-}
-
+function openProject(name){
 
 document.getElementById("modal").style.display="block";
 
-document.getElementById("modal-title").innerHTML=title;
 
-document.getElementById("modal-desc").innerHTML=desc;
+if(name==="healthcare"){
+
+document.getElementById("projectTitle").innerHTML="Healthcare Project";
+
+document.getElementById("projectDesc").innerHTML=
+
+"Built Apex, LWC, integrations, flows for healthcare system";
 
 }
 
 
-function closeModal(){
+if(name==="insurance"){
+
+document.getElementById("projectTitle").innerHTML="Insurance Project";
+
+document.getElementById("projectDesc").innerHTML=
+
+"Worked on Claims module, integrations and automation";
+
+}
+
+
+
+if(name==="banking"){
+
+document.getElementById("projectTitle").innerHTML="Banking Project";
+
+document.getElementById("projectDesc").innerHTML=
+
+"Developed loan lifecycle using Apex and Lightning";
+
+}
+
+
+
+}
+
+
+
+function closeProject(){
 
 document.getElementById("modal").style.display="none";
 
 }
+
+
+
+
+/* NEW BACKGROUND ANIMATION */
+
+const canvas = document.getElementById("bgCanvas");
+
+const ctx = canvas.getContext("2d");
+
+
+canvas.width = window.innerWidth;
+
+canvas.height = window.innerHeight;
+
+
+let particles=[];
+
+
+for(let i=0;i<100;i++){
+
+particles.push({
+
+x:Math.random()*canvas.width,
+
+y:Math.random()*canvas.height,
+
+radius:Math.random()*2,
+
+dx:Math.random()*1,
+
+dy:Math.random()*1
+
+});
+
+}
+
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+
+ctx.fillStyle="gold";
+
+
+particles.forEach(p=>{
+
+ctx.beginPath();
+
+ctx.arc(p.x,p.y,p.radius,0,Math.PI*2);
+
+ctx.fill();
+
+
+p.x+=p.dx;
+
+p.y+=p.dy;
+
+
+if(p.x>canvas.width) p.x=0;
+
+if(p.y>canvas.height) p.y=0;
+
+});
+
+
+requestAnimationFrame(animate);
+
+}
+
+
+animate();
